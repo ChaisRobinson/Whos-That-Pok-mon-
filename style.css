@@ -1,0 +1,53 @@
+body {
+  background-image: url("https://thewrightjason.com/wp-content/uploads/2020/01/pokemon-digital-illustration-scaled.jpg");
+  color: yellow;
+  background-color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  opacity: 0;
+  transition: opacity 3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.color-change {
+  width: 400px;
+  height: auto;
+  filter: brightness(0) saturate(100%);
+  transition: filter 3s ease;
+}
+
+.color-change.filtered {
+  filter: none;
+}
+
+.name.opacity {
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spin-animation {
+  animation: spin 1s linear forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
