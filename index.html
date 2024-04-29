@@ -1,53 +1,59 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who's that Pokemon?</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <div class="container">
-      <h1 class="tittle">Who's that Pokemon?</h1>
-      <div class="boxOne">
-        <div class="pokemon-container" id="pokemon1" style="display: none">
-          <img src="Gengar.webp" alt="" class="color-change" id="gengar" />
-          <h1 class="name" id="gen">It's Gengar</h1>
+      <h1 class="title">Who's that Pokemon?</h1>
+      <div class="pokemon-container">
+        <div id="pokemon1" style="display: none">
+          <img
+            src="Gengar.webp"
+            alt="Gengar"
+            class="color-change"
+            id="gengar"
+          />
+          <h2 class="name" id="gen">It's Gengar</h2>
         </div>
-        <div class="pokemon-container" id="pokemon2" style="display: none">
+        <div id="pokemon2" style="display: none">
           <img
             src="https://upload.wikimedia.org/wikipedia/en/1/1f/Pok%C3%A9mon_Charizard_art.png"
-            alt=""
+            alt="Charizard"
             class="color-change"
             id="charizard"
           />
-          <h1 class="name" id="char">It's Charizard</h1>
+          <h2 class="name" id="char">It's Charizard</h2>
         </div>
-        <div class="pokemon-container" id="pokemon3" style="display: none">
-          <img src="Mew-PNG-Pic.png" alt="" class="color-change" id="mew" />
-          <h1 class="name" id="m">It's Mew</h1>
+        <div id="pokemon3" style="display: none">
+          <img src="Mew-PNG-Pic.png" alt="Mew" class="color-change" id="mew" />
+          <h2 class="name" id="m">It's Mew</h2>
         </div>
-        <div class="pokemon-container" id="pokemon4" style="display: none">
+        <div id="pokemon4" style="display: none">
           <img
             src="65-Alakazam.webp"
-            alt=""
+            alt="Alakazam"
             class="color-change"
             id="alakazam"
           />
-          <h1 class="name" id="ala">It's Alakazam</h1>
+          <h2 class="name" id="ala">It's Alakazam</h2>
         </div>
-        <div class="pokemon-container" id="pokemon5" style="display: none">
-          <img src="527Woobat.webp" alt="" class="color-change" id="woobat" />
-          <h1 class="name" id="woo">It's Woobat</h1>
+        <div id="pokemon5" style="display: none">
+          <img
+            src="527Woobat.webp"
+            alt="Woobat"
+            class="color-change"
+            id="woobat"
+          />
+          <h2 class="name" id="woo">It's Woobat</h2>
         </div>
       </div>
-      <div class="boxTwo">
-        <button class="prompt" onclick="userPrompt()">Take a Guess</button>
-        <button onclick="refreshPage()">Play Again</button>
+      <div class="button-container">
+        <button class="btn prompt" onclick="userPrompt()">Take a Guess</button>
+        <button class="btn refresh" onclick="refreshPage()">Play Again</button>
       </div>
     </div>
 
